@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17189B4719A349FF00573414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17189B4619A349FF00573414 /* AppDelegate.swift */; };
+		17189B4919A349FF00573414 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17189B4819A349FF00573414 /* ViewController.swift */; };
+		17189B4C19A349FF00573414 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17189B4A19A349FF00573414 /* Main.storyboard */; };
+		17189B4E19A349FF00573414 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17189B4D19A349FF00573414 /* Images.xcassets */; };
+		17189B5A19A349FF00573414 /* DbMigrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17189B5919A349FF00573414 /* DbMigrationTests.swift */; };
+		17189B6519A34A2700573414 /* Db.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17189B6319A34A2700573414 /* Db.swift */; };
+		17189B6619A34A2700573414 /* DbMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17189B6419A34A2700573414 /* DbMigration.swift */; };
+		176E967919A34E3D00AED412 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 176E966F19A34E3D00AED412 /* FMDatabase.m */; };
+		176E967A19A34E3D00AED412 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 176E967119A34E3D00AED412 /* FMDatabaseAdditions.m */; };
+		176E967B19A34E3D00AED412 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 176E967319A34E3D00AED412 /* FMDatabasePool.m */; };
+		176E967C19A34E3D00AED412 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 176E967519A34E3D00AED412 /* FMDatabaseQueue.m */; };
+		176E967D19A34E3D00AED412 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 176E967819A34E3D00AED412 /* FMResultSet.m */; };
+		176E967F19A3512000AED412 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 176E967E19A3512000AED412 /* libsqlite3.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17189B5419A349FF00573414 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17189B3919A349FF00573414 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17189B4019A349FF00573414;
+			remoteInfo = DbMigration;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17189B4119A349FF00573414 /* DbMigration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DbMigration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17189B4519A349FF00573414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17189B4619A349FF00573414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		17189B4819A349FF00573414 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		17189B4B19A349FF00573414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17189B4D19A349FF00573414 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		17189B5319A349FF00573414 /* DbMigrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DbMigrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17189B5819A349FF00573414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17189B5919A349FF00573414 /* DbMigrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbMigrationTests.swift; sourceTree = "<group>"; };
+		17189B6319A34A2700573414 /* Db.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Db.swift; path = ../Db.swift; sourceTree = "<group>"; };
+		17189B6419A34A2700573414 /* DbMigration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DbMigration.swift; sourceTree = SOURCE_ROOT; };
+		17189B6719A34A4F00573414 /* bridge-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bridge-header.h"; sourceTree = "<group>"; };
+		176E966E19A34E3D00AED412 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		176E966F19A34E3D00AED412 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		176E967019A34E3D00AED412 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		176E967119A34E3D00AED412 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		176E967219A34E3D00AED412 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		176E967319A34E3D00AED412 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		176E967419A34E3D00AED412 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		176E967519A34E3D00AED412 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		176E967619A34E3D00AED412 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		176E967719A34E3D00AED412 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		176E967819A34E3D00AED412 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		176E967E19A3512000AED412 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17189B3E19A349FF00573414 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				176E967F19A3512000AED412 /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17189B5019A349FF00573414 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17189B3819A349FF00573414 = {
+			isa = PBXGroup;
+			children = (
+				176E967E19A3512000AED412 /* libsqlite3.dylib */,
+				17189B4319A349FF00573414 /* DbMigration */,
+				17189B5619A349FF00573414 /* DbMigrationTests */,
+				17189B4219A349FF00573414 /* Products */,
+				176E966D19A34E3D00AED412 /* fmdb */,
+			);
+			sourceTree = "<group>";
+		};
+		17189B4219A349FF00573414 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17189B4119A349FF00573414 /* DbMigration.app */,
+				17189B5319A349FF00573414 /* DbMigrationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17189B4319A349FF00573414 /* DbMigration */ = {
+			isa = PBXGroup;
+			children = (
+				17189B6319A34A2700573414 /* Db.swift */,
+				17189B6419A34A2700573414 /* DbMigration.swift */,
+				17189B4619A349FF00573414 /* AppDelegate.swift */,
+				17189B4819A349FF00573414 /* ViewController.swift */,
+				17189B4A19A349FF00573414 /* Main.storyboard */,
+				17189B4D19A349FF00573414 /* Images.xcassets */,
+				17189B4419A349FF00573414 /* Supporting Files */,
+				17189B6719A34A4F00573414 /* bridge-header.h */,
+			);
+			path = DbMigration;
+			sourceTree = "<group>";
+		};
+		17189B4419A349FF00573414 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17189B4519A349FF00573414 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17189B5619A349FF00573414 /* DbMigrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				17189B5919A349FF00573414 /* DbMigrationTests.swift */,
+				17189B5719A349FF00573414 /* Supporting Files */,
+			);
+			path = DbMigrationTests;
+			sourceTree = "<group>";
+		};
+		17189B5719A349FF00573414 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17189B5819A349FF00573414 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		176E966D19A34E3D00AED412 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				176E966E19A34E3D00AED412 /* FMDatabase.h */,
+				176E966F19A34E3D00AED412 /* FMDatabase.m */,
+				176E967019A34E3D00AED412 /* FMDatabaseAdditions.h */,
+				176E967119A34E3D00AED412 /* FMDatabaseAdditions.m */,
+				176E967219A34E3D00AED412 /* FMDatabasePool.h */,
+				176E967319A34E3D00AED412 /* FMDatabasePool.m */,
+				176E967419A34E3D00AED412 /* FMDatabaseQueue.h */,
+				176E967519A34E3D00AED412 /* FMDatabaseQueue.m */,
+				176E967619A34E3D00AED412 /* FMDB.h */,
+				176E967719A34E3D00AED412 /* FMResultSet.h */,
+				176E967819A34E3D00AED412 /* FMResultSet.m */,
+			);
+			name = fmdb;
+			path = fmdb/src/fmdb;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17189B4019A349FF00573414 /* DbMigration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17189B5D19A349FF00573414 /* Build configuration list for PBXNativeTarget "DbMigration" */;
+			buildPhases = (
+				17189B3D19A349FF00573414 /* Sources */,
+				17189B3E19A349FF00573414 /* Frameworks */,
+				17189B3F19A349FF00573414 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DbMigration;
+			productName = DbMigration;
+			productReference = 17189B4119A349FF00573414 /* DbMigration.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17189B5219A349FF00573414 /* DbMigrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17189B6019A349FF00573414 /* Build configuration list for PBXNativeTarget "DbMigrationTests" */;
+			buildPhases = (
+				17189B4F19A349FF00573414 /* Sources */,
+				17189B5019A349FF00573414 /* Frameworks */,
+				17189B5119A349FF00573414 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17189B5519A349FF00573414 /* PBXTargetDependency */,
+			);
+			name = DbMigrationTests;
+			productName = DbMigrationTests;
+			productReference = 17189B5319A349FF00573414 /* DbMigrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17189B3919A349FF00573414 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Florian Biewald";
+				TargetAttributes = {
+					17189B4019A349FF00573414 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					17189B5219A349FF00573414 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 17189B4019A349FF00573414;
+					};
+				};
+			};
+			buildConfigurationList = 17189B3C19A349FF00573414 /* Build configuration list for PBXProject "DbMigration" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17189B3819A349FF00573414;
+			productRefGroup = 17189B4219A349FF00573414 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17189B4019A349FF00573414 /* DbMigration */,
+				17189B5219A349FF00573414 /* DbMigrationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17189B3F19A349FF00573414 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17189B4C19A349FF00573414 /* Main.storyboard in Resources */,
+				17189B4E19A349FF00573414 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17189B5119A349FF00573414 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17189B3D19A349FF00573414 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17189B6619A34A2700573414 /* DbMigration.swift in Sources */,
+				176E967C19A34E3D00AED412 /* FMDatabaseQueue.m in Sources */,
+				17189B4919A349FF00573414 /* ViewController.swift in Sources */,
+				17189B4719A349FF00573414 /* AppDelegate.swift in Sources */,
+				176E967919A34E3D00AED412 /* FMDatabase.m in Sources */,
+				176E967B19A34E3D00AED412 /* FMDatabasePool.m in Sources */,
+				176E967D19A34E3D00AED412 /* FMResultSet.m in Sources */,
+				17189B6519A34A2700573414 /* Db.swift in Sources */,
+				176E967A19A34E3D00AED412 /* FMDatabaseAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17189B4F19A349FF00573414 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17189B5A19A349FF00573414 /* DbMigrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17189B5519A349FF00573414 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17189B4019A349FF00573414 /* DbMigration */;
+			targetProxy = 17189B5419A349FF00573414 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17189B4A19A349FF00573414 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17189B4B19A349FF00573414 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17189B5B19A349FF00573414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		17189B5C19A349FF00573414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17189B5E19A349FF00573414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = DbMigration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DbMigration/bridge-header.h";
+			};
+			name = Debug;
+		};
+		17189B5F19A349FF00573414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = DbMigration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DbMigration/bridge-header.h";
+			};
+			name = Release;
+		};
+		17189B6119A349FF00573414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DbMigrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DbMigration.app/DbMigration";
+			};
+			name = Debug;
+		};
+		17189B6219A349FF00573414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DbMigrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DbMigration.app/DbMigration";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17189B3C19A349FF00573414 /* Build configuration list for PBXProject "DbMigration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17189B5B19A349FF00573414 /* Debug */,
+				17189B5C19A349FF00573414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17189B5D19A349FF00573414 /* Build configuration list for PBXNativeTarget "DbMigration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17189B5E19A349FF00573414 /* Debug */,
+				17189B5F19A349FF00573414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17189B6019A349FF00573414 /* Build configuration list for PBXNativeTarget "DbMigrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17189B6119A349FF00573414 /* Debug */,
+				17189B6219A349FF00573414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17189B3919A349FF00573414 /* Project object */;
+}
